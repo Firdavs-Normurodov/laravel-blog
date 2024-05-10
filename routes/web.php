@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\PageController;
-use App\Http\Controllers\PostController;
+// use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'main']);
@@ -9,8 +9,6 @@ Route::get('about-page', [PageController::class, 'about'])->name('about');
 Route::get('service-page', [PageController::class, 'service'])->name('service');
 Route::get('projects-page', [PageController::class, 'project'])->name('project');
 Route::get('contact-page', [PageController::class, 'contact'])->name('contact');
-
-
 
 // Route::get('posts', [PostController::class, 'index'])->name('posts.index');
 // Route::get('posts{post}', [PostController::class, 'show'])->name('posts.show');
